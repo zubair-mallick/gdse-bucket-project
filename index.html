@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    <main>
+      <nav>
+        <div class="logo-container">
+          <img src="./assets/logo.svg" alt="bucketly-logo" />
+          <h1>Bucketly</h1>
+        </div>
+
+        <div id="theme">
+         
+          <div id="themecontainer">
+            THEME:
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+              
+              <span class="ball"></span>
+            </label>
+          </div>
+          
+          
+        </div>
+      </nav>
+
+      <div class="input-container">
+        <form id="item-form">
+          <div class="input-fields">
+            <div class="input-item">
+              <label for="Place">Place:</label>
+              <input type="text" id="placeform" placeholder="Enter the place" />
+            </div>
+            <div class="input-item">
+              <label for="Location">Location:</label>
+              <input
+                type="text"
+                id="locationform"
+                placeholder="Enter the location"
+              />
+            </div>
+            <div class="input-item">
+              <label for="Plan">Plan:</label>
+              <textarea
+                id="planform"
+                rows="1"
+                cols="20"
+                placeholder="Enter the plan"
+              ></textarea>
+            </div>
+            <div class="input-item">
+              <label for="Image">Image:</label>
+              <input
+                type="text"
+                id="imageform"
+                placeholder="Enter the image url"
+              />
+            </div>
+            <div class="input-item">
+              <label for="Date">Date:</label>
+              <input type="date" id="dateform" placeholder="Enter the date" />
+            </div>
+            <div class="input-item">
+              <label for="Link">Link:</label>
+              <input type="text" id="linkform" placeholder="Enter the link" />
+            </div>
+          </div>
+          <button type="submit" id="submitform">
+            <img src="./assets/button.svg" alt="btn" />
+          </button>
+        </form>
+      </div>
+
+      <div id="cards">
+        <!-- Existing card content -->
+      </div>
+
+      <div id="footer">
+       😎 made by zubair mallik
+ </div>
+    </main>
+
+    <!-- Edit Modal -->
+    <div id="edit-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <form id="edit-form">
+          <div class="input-fields">
+            <div class="input-item">
+              <label for="edit-place">Place:</label>
+              <input
+                type="text"
+                id="edit-place"
+                placeholder="Enter the place"
+              />
+            </div>
+            <div class="input-item">
+              <label for="edit-location">Location:</label>
+              <input
+                type="text"
+                id="edit-location"
+                placeholder="Enter the location"
+              />
+            </div>
+            <div class="input-item">
+              <label for="edit-plan">Plan:</label>
+              <textarea
+                id="edit-plan"
+                rows="1"
+                cols="20"
+                placeholder="Enter the plan"
+              ></textarea>
+            </div>
+            <div class="input-item">
+              <label for="edit-image">Image:</label>
+              <input
+                type="text"
+                id="edit-image"
+                placeholder="Enter the image url"
+              />
+            </div>
+            <div class="input-item">
+              <label for="edit-date">Date:</label>
+              <input type="date" id="edit-date" placeholder="Enter the date" />
+            </div>
+            <div class="input-item">
+              <label for="edit-link">Link:</label>
+              <input type="text" id="edit-link" placeholder="Enter the link" />
+            </div>
+          </div>
+          <button type="submit" id="edit-submit">Update</button>
+        </form>
+
+        
+      </div>
+
+     
+    </div>
+
+    <script type="module" src="index.js"></script>  
+  </body>
+</html>
